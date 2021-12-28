@@ -1,0 +1,107 @@
+body {
+  background-color: #8B5799;
+  height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20pt;
+}
+
+h1 {
+  font-family: 'Shizuru', cursive;
+  font-size: 30pt;
+  text-align: center;
+  color: #D1E6B0;
+  margin-top: 50px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+  margin: auto;
+  color: #E3E3E3;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  color: #869967;
+  font-weight: 700;
+}
+
+select {
+  border-radius: 5px;
+}
+
+#numbers {
+  margin: 100px auto;
+  font-size: 1.1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  row-gap: 15px;
+  width: 50%;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  color: #EBFFCB;
+  background-color: #869967;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#roll {
+  height: 50px;
+  color: #869967;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#stats {
+  color: #E3E3E3;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=app.css.map */
