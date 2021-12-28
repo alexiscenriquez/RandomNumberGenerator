@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Number Generator</title>
-    <link rel="stylesheet" href="/dist/css/app.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Shizuru&display=swap" rel="stylesheet">
-</head>
-<body>
-   <h1>Random Number Generator</h1> 
+    <link rel="stylesheet" href="/dist/css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Random Number Generator</h1>
 
-   <form action="">
-       <label for="dice">Number of Dice
-        <input type="number" name="dice">
-       </label>
-      
-       <label for="sides">Number of Sides
-        <select name="sides" id="sides">
-            <option value="" disabled selected="true"></option>
-            <option value="4">4</option>
-            <option value="6">6</option>
-            <option value="8">8</option>
-            <option value="10">10</option>
-            <option value="12">12</option>
-            <option value="20">20</option>
+    <form>
+      <label for="dice"
+        >Number of Dice
+        <input type="number" name="dice" id="dice" required />
+      </label>
+      <label for="sides"
+        >Number of Sides
+        <select name="sides" id="sides" required>
+          <option value="" disabled selected="true"></option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="20">20</option>
         </select>
-       </label>   
-       <button id ="roll">Roll Dice</button> 
-   </form>
-<div id="stats">
-<p>Number of Dice Rolled: <span id="dice-rolled"></span></p>
-<p>Type of Dice: <span id="dice-type"></span></p>
-<p>Count: <span id="count"></span></p>
-<p></p></div>
-</body>
+      </label>
+    <div id="buttons">  <button id="roll">Roll Dice</button>
+    <button id="nGame">New Game</button></div>
+    </form>
+    <div id="numbers"></div>
+    <div id="stats">
+      <p>Number of Dice Rolled: <span id="dice-rolled"></span></p>
+      <p>Type of Dice: <span id="dice-type"></span></p>
+      <p>Count: <span id="count"></span></p>
+      <p></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

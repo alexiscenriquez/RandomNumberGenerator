@@ -1,15 +1,15 @@
 body {
-  background-color: #8B5799;
+  background-color: #8b5799;
   height: 100vh;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20pt;
 }
 
 h1 {
-  font-family: 'Shizuru', cursive;
+  font-family: "Shizuru", cursive;
   font-size: 30pt;
   text-align: center;
-  color: #D1E6B0;
+  color: #d1e6b0;
   margin-top: 50px;
 }
 
@@ -26,9 +26,10 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40%;
+  height: 45%;
   margin: auto;
-  color: #E3E3E3;
+  color: #e3e3e3;
+  width: 70%;
 }
 
 label {
@@ -55,36 +56,47 @@ select {
 #numbers {
   margin: 100px auto;
   font-size: 1.1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  row-gap: 15px;
+  text-align: center;
   width: 50%;
+}
+
+#nGame {
+  display: none;
 }
 
 .number {
   width: 50px;
   height: 50px;
-  color: #EBFFCB;
+  color: #ebffcb;
   background-color: #869967;
   text-align: center;
   border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
 }
 
-#roll {
+button {
   height: 50px;
   color: #869967;
   font-weight: 700;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  display: inline;
+  margin: 10px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 5px 2px #0000005b;
+          box-shadow: 1px 1px 5px 2px #0000005b;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 #stats {
-  color: #E3E3E3;
+  color: #e3e3e3;
   margin: auto;
   width: 50%;
   text-align: center;
